@@ -6,17 +6,19 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
         <title>Document</title>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
         <link href="https://fonts.googleapis.com/css?family=Poppins|Rubik&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="./js/index.js" type="text/javascript"></script>
         <link rel="stylesheet" href="./css/style.css">
     </head>
 
     <body>
-        <header class="bg-white">
+        <header id="header" class="bg-white">
             <nav class="container navbar">
                 <a class="navbar-brand" href="#home">
                     <img src="./images/Logo.svg" alt="logo" width="110" height="34">
@@ -61,44 +63,52 @@
     
                     <p>It is a long established fact that a reader will be distracted by the there <br> are many cats and dog tuitorial series.</p>
     
-                    <button type="button" class="btn btn-outline-dark d-flex">Start 7 Days Trail</button>
+                    <button type="button" class="btn btn-outline-dark d-flex">Start 7 Days Trial</button>
                 </div>
             </div>
         </section>
 
         <section class="activities">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-sm-2">
-                        <img src="./images/business.svg" alt="business">
-                        <p>Business</p>
-                    </div>
-
-                    <div class="col-sm-2">
+                <div class="row text-center inner-activities align-items-center">
+                    <div class="col">
                         <div>
-                            <img src="./images/design.svg" alt="design">
-                            <p>Design</p>
+                            <img src="./images/business.svg" alt="business">
+                            <p class="inner-activities-tag">Business</p>
                         </div>
                     </div>
 
-                    <div class="col-sm-2">
-                        <img src="./images/development.svg" alt="development">
-                        <p>Development</p>
+                    <div class="col">
+                        <div>
+                            <img src="./images/design.svg" alt="design">
+                            <p class="inner-activities-tag">Design</p>
+                        </div>
                     </div>
 
-                    <div class="col-sm-2">
-                        <img src="./images/language.svg" alt="language">
-                        <p>Language</p>
+                    <div class="col">
+                        <div>
+                            <img src="./images/development.svg" alt="development">
+                            <p class="inner-activities-tag">Development aaa aaaaaa<br /> aaaa</p>
+                        </div>
                     </div>
 
-                    <div class="col-sm-2">
-                        <img src="./images/gaming.svg" alt="gaming">
-                        <p>Gaming</p>
+                    <div class="col">
+                        <div>
+                            <img src="./images/language.svg" alt="language">
+                            <p class="inner-activities-tag">Language</p>
+                        </div>
                     </div>
 
-                    <div class="col-sm-2">
-                        <p>+</p>
-                        <p>View Other</p>
+                    <div class="col">
+                        <div>
+                            <img src="./images/gaming.svg" alt="gaming">
+                            <p class="inner-activities-tag">Gaming</p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <p class="inner-activities-tag">+</p>
+                        <p class="inner-activities-tag">View Other</p>
                     </div>
                 </div>
             </div>
@@ -107,48 +117,89 @@
         <section class="courses">
             <div class="container">
 
-                <div class="row">
-                    <h2 class="col">Recommended <strong>Courses</strong></h2>
+                <div class="row inner-courses-heading">
+                    <h2 class="">Recommended <strong>Courses</strong></h2>
                     <button type="button" class="btn btn-outline-dark col">Dark</button>
                 </div>
                 
-                <!-- <div class="row">
-                        <div class="card">
-                                <img class="card-img-top" src="./images/mobile.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">How To Become Great Graphic Designer in 7 Days</p>
-                                    
-                                </div>
+                <div class="d-flex inner-courses-cards">
+                    <div class="card" style="border-radius: 15px;">
+                        <img class="card-img-top" src="./images/mobile.png" alt="card mobile">
+
+                        <div class="card-body">
+
+                            <div class="row">
+                                <h6 class="card-subtitle text-muted col">Graphic Design</h6>
+                                <h6 class="card-subtitle text-muted col-auto ml-auto">8h 17min</h6>
                             </div>
-            
-                            <div class="card">
-                                <img class="card-img-top" src="./images/mobile.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">How To Become Great Graphic Designer in 7 Days</p>
-                                    
-                                </div>
+                            
+
+                            <h5 class="card-title">How To Become Great Graphic Designer in 7 Days</h5>
+
+                            <div class="text-muted row">
+                                <span class="col-auto">
+                                    <i class="fas fa-star courses-ratings-icons"></i>
+                                    <i class="fas fa-star courses-ratings-icons"></i>
+                                    <i class="fas fa-star courses-ratings-icons"></i>
+                                    <i class="fas fa-star courses-ratings-icons"></i>
+                                    <i class="fas fa-star-half courses-ratings-icons"></i>
+                                    (15,250)
+                                </span>
+                                
+                                <span class="col-auto ml-auto">2,526,471 Views</span>
                             </div>
-            
-                            <div class="card">
-                                <img class="card-img-top" src="./images/mobile.png" alt="Card image cap">
-                                <div class="card-body">
-                                    <h5 class="card-title">Card title</h5>
-                                    <p class="card-text">How To Become Great Graphic Designer in 7 Days</p>
-                                    
-                                </div>
-                            </div>
-                </div> -->
-                
+
+                        </div>
+                    </div>
+
+                </div>
 
             </div>
         </section>
 
         <section class="facilities">
-            <img src="./images/headphoneboy.png" alt="headphone boy">
             <div class="container">
-                
+                <div class="inner-facilities col-sm-5">
+                    <div class="inner-facilities-heading">
+                        <h4>Why You Should</h4>
+                        <h2>Choose Us</h2>
+                    </div>
+
+                    <p>There are many variations of passages of Lorem Ipsum available, some form, by injected humour.</p>
+
+                    <ul class="list-unstyled">
+                        <li class="facilities-checks">
+                            <i class='fas fa-check'></i>
+                            <span>24000+ Online Course</span>
+                        </li>
+
+                        <li class="facilities-checks">
+                            <i class='fas fa-check'></i>
+                            <span>Expert Instruction</span>
+                        </li>
+
+                        <li class="facilities-checks">
+                            <i class='fas fa-check'></i>
+                            <span>Unlimited Access</span>
+                        </li>
+
+                        <li class="facilities-checks">
+                            <i class='fas fa-check'></i>
+                            <span>Comfortable Prices</span>
+                        </li>
+
+                        <li class="facilities-checks">
+                            <i class='fas fa-check'></i>
+                            <span>Free 2 Month Trial</span>
+                        </li>
+
+                        <li class="facilities-checks">
+                            <i class='fas fa-check'></i>
+                            <span>Review System</span>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </section>
 
@@ -192,8 +243,47 @@
         </section>
 
         <section class="feedback">
-            <div class="container">
+            <div class="inner-feedback">
+                <div class="container">
+                    <!-- DONE -->
+                    <div class="inner-feedback-heading row">
+                        <h2 class="col-auto mr-auto">
+                            <span class="light-heading">Enroll Student's</span>
+                            <span class="bold-heading">Feedback</span>
+                        </h2>
+                        
+                        <button type="button" class="btn btn-outline-dark col-2 ml-auto">View More</button>
+                    </div>
 
+                    <!-- DONE -->
+                    <div class="inner-feedback-content row">
+                        <div class="card col-auto mr-auto text-center">
+                            <div class="card-body">
+                                <p class="info">It has survived not only five centuries, but also the leap into <br> electronic typesetting, remaining essentially unchanged. It was <br> popularised in the 1960s with the race.</p>
+                                <img src="./images/amanda_jackson.png" alt="Card image cap" width="60" height="60">
+                                <h5 class="card-title">Amanda Jackson</h5>
+                                <h6 class="card-subtitle text-muted">CEO, NRD Group</h6>
+                            </div>
+                        </div>
+
+                        <div class="card col-auto ml-auto text-center">
+                            <div class="card-body">
+                                <p class="info">It has survived not only five centuries, but also the leap into <br> electronic typesetting, remaining essentially unchanged. It was <br> popularised in the 1960s with the race.</p>
+                                <img src="./images/john_doe.png" alt="Card image cap" width="60" height="60">
+                                <h5 class="card-title">John Doe</h5>
+                                <h6 class="card-subtitle text-muted">CEO, Pixel Group</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DONE -->
+                    <div class="inner-feedback-bottom text-center">
+                        <h3 class="light-heading">To Get Latest News & Further Update</h3>
+                        <h2 class="bold-heading">Subscribe Our Newsletter</h2>
+
+                        <button type="button" class="btn col-2">Subscribe</button>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -236,8 +326,15 @@
 
                     <div class="col">
                         <h3 class="first">Download App</h3>
-                        <button type="button" class="btn btn-dark btn-block"><i class="fa fa-apple"></i>Apple IOs</button>
-                        <button type="button" class="btn btn-dark btn-block"><i class="fa fa-android"></i>Google Play</button>
+                        <button type="button" class="btn btn-dark btn-block mybutton btn-brand">
+                            <i class="fa fa-apple"></i>
+                            <span>Apple IOs</span>
+                        </button>
+
+                        <button type="button" class="btn btn-dark btn-block mybutton btn-brand">
+                            <i class="fa fa-android"></i>
+                            <span>Google Play</span>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -245,10 +342,14 @@
 
         <footer>
             <div class="container">
-                <!-- <div> -->
-                    <span>Copyright &copy 2010-2019 Pro.skill</span>
-                    <span>Go to Top</span>
-                <!-- </div> -->
+                <div class="row">
+                    <span class="col-10">Copyright &copy 2010-2019 Pro.skill</span>
+
+                    <a href="#home" class="col-2" onclick="topFunction()" id="gotop">
+                        <span>Go to Top</span>
+                        <i class='fas fa-arrow-circle-up'></i>
+                    </a>
+                </div>
             </div>
         </footer>
 
