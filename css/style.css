@@ -1,10 +1,22 @@
-/* font-family: 'Rubik', sans-serif; Regular 400*/
-/* font-family: 'Poppins', sans-serif; Semibold 600 ; bold 700; Regular 400; light 300; medium 500*/
+
+/* ------------------------------------------ button-property ------------------------------------------ */
+.new-button{
+    font-family: 'Rubik', sans-serif; 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #FFFFFF;
+    border-radius: 25px;
+    border: 1px solid #FFFFFF;
+    height: 50px;
+}
+
+.new-button:hover{
+    cursor: default !important;
+}
 
 /* ------------------------------------------ header ------------------------------------------ */
 header{
-    position: fixed;
-    width: 100%;
     padding: 24px 0px;
     z-index: 1;
 }
@@ -13,7 +25,7 @@ header ul li a{
     color: #475677;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    font-size: 15px;display: -ms-flexbox;
+    font-size: 15px;
     line-height: 18px;
 }
 
@@ -42,12 +54,6 @@ header nav ul li:nth-last-child(1) a{
     padding-top: 108px;
 }
 
-.banner .container{
-    display: flex;
-    align-items: center;
-    height: 100%;
-}
-
 .banner .container h1{
     font-family: 'Poppins', sans-serif; 
     font-weight: 700;
@@ -73,14 +79,7 @@ header nav ul li:nth-last-child(1) a{
     margin-top: 38px;
 }
 
-.banner .container button{
-    font-family: 'Rubik', sans-serif; 
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 26px;
-    color: #FFFFFF;
-    border-radius: 25px;
-    border: 1px solid #FFFFFF;
+.banner .new-button{
     margin-top: 40px;
 }
 
@@ -94,22 +93,14 @@ header nav ul li:nth-last-child(1) a{
 .activities{
     padding: 150px 0px 152px;
 }
-.activities .container .row .col{
-    height: 100%;
-    flex-wrap: wrap;
 
-}
 .activities .container .row .col > div{
     border: 1px solid #475677;
     border-radius: 15px;
     height: 100%;
 }
 
-.activities .container .row .col img{
-    margin: 38px 0px 15px;
-}
-
-.activities .container .row .col:nth-last-child(1){
+.activities .container .row .col:nth-last-child(1) > div{
     background-color: #FFBE58;
 }
 
@@ -122,28 +113,87 @@ header nav ul li:nth-last-child(1) a{
     line-height: 26px;
 }
 
+/* .activities .container .row .col:nth-last-child(1) .inner-activities-tag:nth-child(1){
+    font-size: 23px;
+    line-height: 26px;
+} */
+
 /* ------------------------------------------ section 3 ------------------------------------------ */
 
 .courses{
 
 }
 
-.inner-courses-cards{
+.inner-courses-cards .card{
+    border: 1px solid rgba(71, 86, 119, 0.2);
+    border-radius: 15px;
+}
 
+.inner-courses-cards .card:nth-child(2){
+    margin: 0px 30px;
+}
+
+.inner-courses-heading{
+    margin-right: 0px;
+}
+
+.courses .new-button{
+    border: 1px solid #475677;
+    color: #475677;
+}
+
+.courses .new-button:hover{
+    background-color: #475677;
+    color: #FFFFFF;
 }
 
 .courses-ratings-icons{
     color: #FFBE58;
 }
 
+.image-hover{
+    display: none;
+    position: absolute;
+    background-color: #00B592;
+    height: 100%;
+    width: 100%;
+    border-radius: 15px 15px 0px 0px;
+    opacity: 90%;
+    top: 0;
+}
+
+.inner-courses-cards .card:hover .image-hover{
+    display: block;
+}
+
+
 /* ------------------------------------------ section 4 ------------------------------------------ */
 
-.facilities{
+/* .facilities{
     background:  url('../images/headphoneboy.png');
     background-size: cover;
-    /* height: 848px; */
+    height: 848px;
     background-repeat: no-repeat;
     background-size: 50% 100%;
+} */
+
+.facilities{
+    position: relative;
+}
+.facilities:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;    
+    bottom: 0;
+    width: 50%;
+    background: url('../images/headphoneboy.png') top center no-repeat;
+    background-size: cover;
+}
+
+.facilities .row{
+    width: 100%;
 }
 
 .facilities .container{
@@ -153,13 +203,20 @@ header nav ul li:nth-last-child(1) a{
     height: 100%;
 }
 
-.facilities .container .col-sm-5{
-    /* padding-left: 0px;
-    padding-right: 0px; */
+/* .facilities .container .row > div{
     padding: 125px 0;
+} */
+
+.facilities .container > div{
+    flex-direction: column;
+    padding: 60px 0px 60px 41px;
 }
 
-.facilities .container .inner-facilities-heading h4{
+.facilities .row ul{
+    margin-left: 46px;
+}
+
+.facilities h4{
     font-family: 'Poppins', sans-serif; 
     font-weight: 600;
     font-size: 38px;
@@ -167,7 +224,7 @@ header nav ul li:nth-last-child(1) a{
     line-height: 38px;
 }
 
-.facilities .container .inner-facilities-heading h2{
+.facilities h2{
     font-family: 'Poppins', sans-serif; 
     font-weight: 300;
     font-size: 72px;
@@ -175,7 +232,7 @@ header nav ul li:nth-last-child(1) a{
     line-height: 90px;
 }
 
-.inner-facilities p{
+.facilities .row div p{
     font-family: 'Rubik', sans-serif; 
     font-weight: 400;
     font-size: 15px;
@@ -214,72 +271,57 @@ header nav ul li:nth-last-child(1) a{
     margin-bottom: 22px;
 }
 
+.achievements .container h1 + p {
+    margin-bottom: 62px;
+}
+
 .achievements .container p{
     font-family: 'Rubik', sans-serif; 
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
     color: #7D8597;
-    margin-bottom: 62px;
 }
 
-.achievements .container .row .blue h2{
+.achievements .container .row h2{
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
     font-size: 40px;
     line-height: 40px;
+}
+
+.achievements .blue{  
     color: #2680EB;
 }
 
-.achievements .container .row .green h2{
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
+.achievements .green{
     color: #00B592;
 }
 
-.achievements .container .row .yellow h2{
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
+.achievements .yellow{
     color: #FFBE58;
 }
 
-.achievements .container .row .red h2{
-    font-family: 'Poppins', sans-serif; 
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 40px;
+.achievements .red{
     color: #E0474E;
 }
 
 /* ------------------------------------------ section 6 ------------------------------------------ */
-
 .monitor{
     padding: 150px 0px 140px;
-    
-    /* background: transparent url('img/video-mockup.png') 0% 0% no-repeat padding-box; */
     box-shadow: 0px 0px 50px #0700001A;
-    /* background-color: red; */
 }
-
 
 /* ------------------------------------------ section 7 ------------------------------------------ */
-
 .feedback{
     background: transparent url('../images/mountains.png') 0% 0% no-repeat padding-box;
-    height: 977px;
     background-repeat: no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
-.inner-feedback {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.feedback{
+    padding: 64px 0px 48px;
 }
 
 .light-heading{
@@ -300,17 +342,20 @@ header nav ul li:nth-last-child(1) a{
     font-weight: 700;
 }
 
-.inner-feedback-heading button{
+.inner-feedback-heading{
+    margin-right: 0px;
+}
+
+.inner-feedback-heading .new-button{
     border: 1px solid #475677;
-    border-radius: 25px;
-    height: 50px;
-    /* width: 200px; */
+    color: #475677;
+    /* opacity: 50%; */
 }
 
 .inner-feedback-heading button:hover{
-    background-color: #FFFFFF;
-    opacity: 70%;
-    color: #475677;
+    background-color: #475677;
+    color: #FFFFFF;
+    /* opacity: 50%; */
 }
 
 .inner-feedback-content{
@@ -364,11 +409,10 @@ header nav ul li:nth-last-child(1) a{
     color: #FFFFFF;
 }
 
-.inner-feedback-bottom button{
+.inner-feedback-bottom .new-button{
     color: #FFFFFF;
-    background-color: #00B592;
-    border-radius: 25px;
-    height: 50px;
+    background-color: #00B592; 
+    border: 1px solid #00B592;
 }
 
 /* ------------------------------------------ section 8 ------------------------------------------ */
@@ -377,14 +421,28 @@ header nav ul li:nth-last-child(1) a{
     padding: 120px 0px;
 }
 
-.services .container .first{
+.services .first{
     margin-bottom: 28px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #334565;
+}
+
+.services .services-fonts li a{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 34px;
+    color: #7D8597;
 }
 
 .mybutton{
     background-color: #334565;
     border-radius: 6px;
     height: 50px;
+    padding-left: 31px;
 }
 
 .mybutton span{
@@ -398,7 +456,6 @@ header nav ul li:nth-last-child(1) a{
 .mybutton i{
     font-size: 30px;
     margin-right: 12px;
-    vertical-align: middle;
 }
 
 /* ------------------------------------------ footer ------------------------------------------ */
@@ -408,30 +465,11 @@ footer{
     border-top: 1px solid rgba(51, 69, 101, 0.1);
 }
 
-footer .container{
-    height: 100%;
-}
-
-footer .container .row{
-    height: 100%;
-    align-items: center;
-}
-
 footer .container span{
-    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 15px;
     line-height: 26px;
     color: #7D8597;
-}
-
-footer .container a{
-    font-family: 'Rubik', sans-serif;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 26px;
-    color: #7D8597;
-    text-align: right;
 }
 
 footer .container a i{
