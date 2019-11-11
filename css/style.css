@@ -104,6 +104,10 @@ header nav ul li:nth-last-child(1) a{
     background-color: #FFBE58;
 }
 
+.activities .container .row div:nth-last-child(1) i{
+    margin-top: 30px;
+}
+
 .inner-activities-tag{
     font-family: 'Poppins', sans-serif; 
     font-weight: 500;
@@ -121,7 +125,11 @@ header nav ul li:nth-last-child(1) a{
 /* ------------------------------------------ section 3 ------------------------------------------ */
 
 .courses{
+    padding-bottom: 190px;
+}
 
+.courses .container > div{
+    margin-bottom: 77px;
 }
 
 .inner-courses-cards .card{
@@ -163,6 +171,7 @@ header nav ul li:nth-last-child(1) a{
 
 .inner-courses-cards .card:hover .image-hover{
     display: block;
+    cursor: pointer;
 }
 
 .image-hover div:nth-child(1){
