@@ -153,7 +153,6 @@ header nav ul li:nth-last-child(1) a{
 
 .image-hover{
     display: none;
-    position: absolute;
     background-color: #00B592;
     height: 100%;
     width: 100%;
@@ -166,6 +165,32 @@ header nav ul li:nth-last-child(1) a{
     display: block;
 }
 
+.image-hover div:nth-child(1){
+    height: 68px;
+    width: 68px;
+    border: 2px solid #FFFFFF;
+    border-radius: 50%;
+    margin-top: 25%;
+    margin-left: 40%;
+}
+
+.image-hover div:nth-child(1)::before{
+    position: absolute;
+    content: "";
+	border-top: 13px solid transparent;
+	border-left: 26px solid #FFFFFF;
+    border-bottom: 13px solid transparent;
+    left: 35%;
+    top: 30%;
+}
+
+.image-hover div:nth-child(2) p{
+    font-family: 'Rubik', sans-serif; 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
 
 /* ------------------------------------------ section 4 ------------------------------------------ */
 
@@ -306,15 +331,43 @@ header nav ul li:nth-last-child(1) a{
     color: #E0474E;
 }
 
-/* ------------------------------------------ section 6 ------------------------------------------ */
+/* ------------------------------------------ monitor section ------------------------------------------ */
 .monitor{
     padding: 150px 0px 140px;
     box-shadow: 0px 0px 50px #0700001A;
 }
 
-/* ------------------------------------------ section 7 ------------------------------------------ */
+.monitor .modal-content iframe{
+    margin: 0 auto;
+    display: block;
+}
+
+.monitor .modal-body {
+    position: relative;
+    padding: 0px;
+}
+
+.monitor .show{
+    padding-right: 0px;
+}
+
+.monitor .close{
+    position:absolute;
+    right: 2%;
+    top: 2%;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+.modal-body button{
+    z-index: 1;
+}
+
+/* ------------------------------------------ feedback section------------------------------------------ */
 .feedback{
-    background: transparent url('../images/mountains.png') 0% 0% no-repeat padding-box;
+    background: transparent url('../images/mountains.png') 0% 0% no-repeat;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -415,7 +468,52 @@ header nav ul li:nth-last-child(1) a{
     border: 1px solid #00B592;
 }
 
-/* ------------------------------------------ section 8 ------------------------------------------ */
+/* ------------------------------------------ carousel section ------------------------------------------ */
+/* .custom-carousel{
+    background: transparent linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%) 0% 0% no-repeat padding-box;
+    width: 100px;
+    height: 50px;
+} */
+
+.carousel-controls a:nth-child(1) img{
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+    margin-right: 26px;
+}
+
+.carousel-inner .carousel-item div{
+    border-radius: 10px;
+}
+
+.carousel-item .instructor-details h6{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.carousel-section .carousel-item{
+    min-width: 270px;
+}
+
+.instructor-details{
+    margin: 0px 20px;
+}
+
+.carousel-item .instructor-details p{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    color: #BFBFBF;
+}
+
+.instructor-details div:nth-child(2) p{
+    font-size: 18px;
+    color: #FFBE58;
+}
+
+/* ------------------------------------------ services section ------------------------------------------ */
 
 .services{
     padding: 120px 0px;

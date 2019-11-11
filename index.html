@@ -25,6 +25,7 @@
 </head>
 
 <body>
+    <!-- DONE -->
     <header id="header" class="bg-white position-fixed w-100">
         <nav class="container navbar">
             <a class="navbar-brand" href="#home">
@@ -61,6 +62,7 @@
         </nav>
     </header>
 
+    <!-- DONE -->
     <section class="banner">
         <div class="container align-items-center d-flex h-100">
             <div class="banner-content">
@@ -116,7 +118,9 @@
 
                 <div class="col">
                     <div class="p-4">
-                        <p class="inner-activities-tag">+</p>
+                        <!-- <p class="inner-activities-tag">+</p> -->
+                        <!-- <img src="./images/plus.svg" alt="More"> -->
+                        <i class="fa fa-plus"></i>
                         <p class="inner-activities-tag">View Other</p>
                     </div>
                 </div>
@@ -140,12 +144,10 @@
                     <div class="card-image-section position-relative">
                         <img class="card-img-top" src="./images/mobile.png" alt="card mobile">
 
-                        <div class="image-hover" id="myimage">
-                            <div>
-                                <div class="image-hover-play"></div>
-                                <div class="image-hover-text">
-                                    Preview Course
-                                </div>
+                        <div class="image-hover position-absolute" id="myimage">
+                            <div class="position-relative"></div>
+                            <div class="text-center mt-3">
+                                <p>Preview Course</p>
                             </div>
                         </div>
                     </div>
@@ -178,12 +180,10 @@
                 <div class="card">
                     <div class="card-image-section position-relative">
                         <img class="card-img-top" src="./images/brushes.png" alt="card mobile">
-                        <div class="image-hover">
-                            <div>
-                                <div class="image-hover-play"></div>
-                                <div class="image-hover-text">
-                                    Preview Course
-                                </div>
+                        <div class="image-hover position-absolute">
+                            <div class="position-relative"></div>
+                            <div class="text-center mt-3">
+                                <p>Preview Course</p>
                             </div>
                         </div>
                     </div>
@@ -216,12 +216,10 @@
                 <div class="card">
                     <div class="card-image-section position-relative">
                         <img class="card-img-top" src="./images/laptop.png" alt="card mobile">
-                        <div class="image-hover">
-                            <div>
-                                <div class="image-hover-play"></div>
-                                <div class="image-hover-text">
-                                    Preview Course
-                                </div>
+                        <div class="image-hover position-absolute">
+                            <div class="position-relative"></div>
+                            <div class="text-center mt-3">
+                                <p>Preview Course</p>
                             </div>
                         </div>
                     </div>
@@ -263,7 +261,8 @@
                     <h4>Why You Should</h4>
                     <h2>Choose Us</h2>
 
-                    <p>There are many variations of passages of Lorem Ipsum available, some form, by injected humour.</p>
+                    <p>There are many variations of passages of Lorem Ipsum available, some form, by injected humour.
+                    </p>
 
                     <ul class="list-unstyled">
                         <li class="facilities-checks">
@@ -334,9 +333,27 @@
         </div>
     </section>
 
+    <!-- DONE -->
     <section class="monitor">
         <div class="container">
-            <img src="./images/monitor.png" alt="monitor video" width="100%">
+            <div class="bs-example">
+                <!-- Button HTML (to Trigger Modal) -->
+                <a href="#myModal" data-toggle="modal">
+                    <img src="./images/monitor.png" alt="monitor video" width="100%">
+                </a>
+
+                <!-- Modal HTML -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content h-100">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <iframe id="demoVideo" class="w-100 h-100" src="./images/video.mp4" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -385,6 +402,116 @@
                     <h2 class="bold-heading">Subscribe Our Newsletter</h2>
 
                     <button type="button" class="btn col-2 new-button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="carousel">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <h2 class="col-auto">
+                    <span class="light-heading">Top Rated</span>
+                    <span class="bold-heading">Instructor</span>
+                </h2>
+
+                <div class="carousel-controls col-auto ml-auto">
+                    <div class="row">
+                        <div class="col">
+                            <a class="carousel-control-prev" role="button" data-slide="prev" href="#carouselExample">
+                                <img src="./images/carouselarrow.svg" alt="Left Arrow" width="34" height="16">
+                            </a>
+                        </div>
+                        
+                        <div class="col">
+                            <a class="carousel-control-next" role="button" data-slide="next" href="#carouselExample">
+                                <img src="./images/carouselarrow.svg" alt="Right Arrow" width="34" height="16">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="carousel slide" data-ride="carousel" role="listbox">
+            <div class="carousel-inner row w-100 mx-auto" role="listbox">
+                <div class="carousel-item col active d-block">
+                    <div class="h-100 w-100 d-flex justify-content-center" style="background-image: linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%), url('./images/RubyGarcia.png'); background-size: contain;">
+                        <div class="align-self-end d-flex justify-content-between instructor-details w-100 align-items-center">
+                            <div>
+                                <h6>Ruby Garcia</h6>
+                                <p>Animator</p>
+                            </div>
+
+                            <div>
+                                <p>4.95</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item col d-block">
+                    <div class="h-100 w-100 d-flex justify-content-center" style="background-image: linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%), url('./images/RobertoTramel.png'); background-size: contain;">
+                        <div class="align-self-end d-flex justify-content-between instructor-details w-100 align-items-center">
+                            <div>
+                                <h6>Roberto Tramel</h6>
+                                <p>Graphic Designer</p>
+                            </div>
+
+                            <div>
+                                <p>4.90</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item col d-block">
+                    <div class="h-100 w-100 d-flex justify-content-center" style="background-image: linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%), url('./images/PaulineJohns.png'); background-size: contain;">
+                        <div class="align-self-end d-flex justify-content-between instructor-details w-100 align-items-center">
+                            <div>
+                                <h6>Pauline Johns</h6>
+                                <p>Fine-Arts</p>
+                            </div>
+
+                            <div>
+                                <p>4.88</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item col d-block">
+                    <div class="h-100 w-100 d-flex justify-content-center" style="background-image: linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%), url('./images/MarnieSmith.png'); background-size: contain;">
+                        <div class="align-self-end d-flex justify-content-between instructor-details w-100 align-items-center">
+                            <div>
+                                <h6>Marnie Smith</h6>
+                                <p>Developer</p>
+                            </div>
+
+                            <div>
+                                <p>4.86</p>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+
+                <div class="carousel-item col d-block">
+                    <div class="h-100 w-100 d-flex justify-content-center" style="background-image: linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%), url('./images/JoshuaWilliam.png'); background-size: contain;">
+                        <div class="align-self-end d-flex justify-content-between instructor-details w-100 align-items-center">
+                            <div>
+                                <h6>Joshua William</h6>
+                                <p>Video Editing</p>
+                            </div>
+
+                            <div>
+                                <p>4.95</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item col d-block">
+                    <img class="img-fluid d-block" src="./images/JoshuaWilliam.png" alt="Joshua William">
                 </div>
             </div>
         </div>
