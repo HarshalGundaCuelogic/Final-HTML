@@ -19,6 +19,8 @@
 header{
     padding: 24px 0px;
     z-index: 1;
+    transition: 0.4s;
+    /* scroll-behavior: smooth; */
 }
 
 header ul li a{
@@ -27,6 +29,10 @@ header ul li a{
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
+}
+
+header ul li a:hover{
+    color: #00B592;
 }
 
 header nav ul li:nth-last-child(2) img{
@@ -124,10 +130,6 @@ header nav ul li:nth-last-child(1) a{
 
 /* ------------------------------------------ section 3 ------------------------------------------ */
 
-.courses{
-    padding-bottom: 190px;
-}
-
 .courses .container > div{
     margin-bottom: 77px;
 }
@@ -160,18 +162,21 @@ header nav ul li:nth-last-child(1) a{
 }
 
 .image-hover{
-    display: none;
+    /* display: none; */
     background-color: #00B592;
     height: 100%;
     width: 100%;
     border-radius: 15px 15px 0px 0px;
     opacity: 90%;
     top: 0;
+    transition: 0.5s;
+    opacity: 0;
+
 }
 
 .inner-courses-cards .card:hover .image-hover{
-    display: block;
     cursor: pointer;
+    opacity: 0.8;
 }
 
 .image-hover div:nth-child(1){
@@ -213,7 +218,9 @@ header nav ul li:nth-last-child(1) a{
 
 .facilities{
     position: relative;
+    margin: 190px 0px 150px;
 }
+
 .facilities:before{
     content: '';
     position: absolute;
@@ -478,38 +485,35 @@ header nav ul li:nth-last-child(1) a{
 }
 
 /* ------------------------------------------ carousel section ------------------------------------------ */
-/* .custom-carousel{
-    background: transparent linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%) 0% 0% no-repeat padding-box;
-    width: 100px;
-    height: 50px;
-} */
-
-.carousel-controls a:nth-child(1) img{
-    transform: matrix(-1, 0, 0, -1, 0, 0);
-    margin-right: 26px;
+.carousel-section{
+    padding: 120px 0px;
 }
 
-.carousel-inner .carousel-item div{
-    border-radius: 10px;
+.carousel-section .container > div{
+    margin-bottom: 57px;
 }
 
-.carousel-item .instructor-details h6{
+.instructor-details h6{
     font-family: 'Rubik', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
 }
 
-.carousel-section .carousel-item{
-    min-width: 270px;
+.carousel-section .carousel-controls a:nth-child(1) img{
+    transform: matrix(-1, 0, 0, -1, 0, 0);
 }
 
 .instructor-details{
-    margin: 0px 20px;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%);
 }
 
-.carousel-item .instructor-details p{
+.instructor-details p{
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     font-size: 15px;

@@ -1,3 +1,4 @@
+// header onscroll code
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() 
@@ -21,6 +22,7 @@ function topFunction()
     document.documentElement.scrollTop = 0;
 }
 
+// Modal code
 $(document).ready(function(){
   $('#myModal').on('shown.bs.modal', function() {
       $('#demoVideo')[0].play();
@@ -37,48 +39,19 @@ $(document).ready(function(){
   });
 });
 
-
-
-
-
-$('#carouselExample').on('slide.bs.carousel', function (e) {
-
-  
-  var $e = $(e.relatedTarget);
-  var idx = $e.index();
-  var itemsPerSlide = 4;
-  var totalItems = $('.carousel-item').length;
-  
-  if (idx >= totalItems-(itemsPerSlide-1)) {
-      var it = itemsPerSlide - (totalItems - idx);
-      for (var i=0; i<it; i++) {
-          // append slides to end
-          if (e.direction=="left") {
-              $('.carousel-item').eq(i).appendTo('.carousel-inner');
-          }
-          else {
-              $('.carousel-item').eq(0).appendTo('.carousel-inner');
-          }
-      }
+// Carousel code
+$('.carousel.carousel-multi-item .carousel-item').each(function(){
+  var next = $(this).next();
+  if (!next.length) {
+    next = $(this).siblings(':first');
   }
-});
+  next.children(':first-child').clone().appendTo($(this));
 
-
-$('#carouselExample').carousel({ 
-              interval: 2000
-      });
-
-
-$(document).ready(function() {
-/* show lightbox when clicking a thumbnail */
-  $('a.thumb').click(function(event){
-    event.preventDefault();
-    var content = $('.modal-body');
-    content.empty();
-      var title = $(this).attr("title");
-      $('.modal-title').html(title);        
-      content.html($(this).html());
-      $(".modal-profile").modal({show:true});
-  });
-
+  for (var i=0;i<4;i++) {
+    next=next.next();
+    if (!next.length) {
+      next=$(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+  }
 });
