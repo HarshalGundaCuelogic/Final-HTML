@@ -501,8 +501,24 @@ header nav ul li:nth-last-child(1) a{
     color: #FFFFFF;
 }
 
-.carousel-section .carousel-controls a:nth-child(1) img{
+.carousel-section .carousel-control-prev-icon{
+    background: url(../images/carouselarrow.svg);
+    height: 16px;
+    width: 34px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     transform: matrix(-1, 0, 0, -1, 0, 0);
+    margin-right: 24px;
+}
+
+.carousel-control-next-icon{
+    background: url(../images/carouselarrow.svg);
+    height: 16px;
+    width: 34px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .instructor-details{

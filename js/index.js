@@ -55,3 +55,7 @@ $('.carousel.carousel-multi-item .carousel-item').each(function(){
     next.children(':first-child').clone().appendTo($(this));
   }
 });
+
+$('#carousel-example-multi').carousel({
+  interval: 10000
+})
