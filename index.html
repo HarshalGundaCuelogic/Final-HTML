@@ -1,171 +1,266 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
-        <title>Document</title>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-        <link href="https://fonts.googleapis.com/css?family=Poppins|Rubik&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="./js/index.js" type="text/javascript"></script>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/globe.svg" sizes="144x144">
+    <title>Home</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:300|Poppins:400|Poppins:500|Poppins:600|Poppins:700|Rubik:500|Rubik:400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
 
-    <body>
-        <header id="header" class="bg-white">
-            <nav class="container navbar">
-                <a class="navbar-brand" href="#home">
-                    <img src="./images/Logo.svg" alt="logo" width="110" height="34">
-                </a>
+<body>
+    <!-- DONE -->
+    <header id="header" class="bg-white position-fixed w-100">
+        <nav class="container navbar">
+            <a class="navbar-brand" href="#home">
+                <img src="./images/Logo.svg" alt="logo" width="110" height="34">
+            </a>
 
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#course">Course</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#course">Course</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#author">Author</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#author">Author</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#feedback">Feedback</a>
-                    </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#feedback">Feedback</a>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#feedback">
-                            <img src="./images/globe.svg" alt="globe">
-                        eng</a>
-                    </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#feedback" data-toggle="dropdown">
+                        <img src="./images/globe.svg" alt="globe">eng
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#marathi">Marathi</a>
+                        <a class="dropdown-item" href="#hindi">Hindi</a>
+                        <a class="dropdown-item" href="#urdu">Urdu</a>
+                    </div>
+                </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="#signin">Sign In</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+                <li class="nav-item">
+                    <a class="nav-link" href="#signin">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-        <section class="banner">
-            <div class="container">
-                <div class="banner-content">
-                    <h1>Learn Something New</h1>
+    <!-- DONE -->
+    <section class="banner">
+        <div class="container align-items-center d-flex h-100">
+            <div class="banner-content">
+                <h1>Learn Something New</h1>
 
-                    <h2>Everyday Anywhere Anytime</h2>
-    
-                    <p>It is a long established fact that a reader will be distracted by the there <br> are many cats and dog tuitorial series.</p>
-    
-                    <button type="button" class="btn btn-outline-dark d-flex">Start 7 Days Trial</button>
-                </div>
+                <h2>Everyday Anywhere Anytime</h2>
+
+                <p>It is a long established fact that a reader will be distracted by the there <br> are many cats and
+                    dog tuitorial series.</p>
+
+                <button type="button" class="btn btn-outline-light new-button col-3">Start 7 Days Trial</button>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="activities">
-            <div class="container">
-                <div class="row text-center inner-activities align-items-center">
-                    <div class="col">
-                        <div>
-                            <img src="./images/business.svg" alt="business">
-                            <p class="inner-activities-tag">Business</p>
-                        </div>
+    <!-- DONE -->
+    <section class="activities">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="p-4">
+                        <img src="./images/business.svg" alt="business">
+                        <p class="inner-activities-tag">Business</p>
                     </div>
+                </div>
 
-                    <div class="col">
-                        <div>
-                            <img src="./images/design.svg" alt="design">
-                            <p class="inner-activities-tag">Design</p>
-                        </div>
+                <div class="col">
+                    <div class="p-4">
+                        <img src="./images/design.svg" alt="design">
+                        <p class="inner-activities-tag">Design</p>
                     </div>
+                </div>
 
-                    <div class="col">
-                        <div>
-                            <img src="./images/development.svg" alt="development">
-                            <p class="inner-activities-tag">Development aaa aaaaaa<br /> aaaa</p>
-                        </div>
+                <div class="col">
+                    <div class="p-4">
+                        <img src="./images/development.svg" alt="development">
+                        <p class="inner-activities-tag">Development</p>
                     </div>
+                </div>
 
-                    <div class="col">
-                        <div>
-                            <img src="./images/language.svg" alt="language">
-                            <p class="inner-activities-tag">Language</p>
-                        </div>
+                <div class="col">
+                    <div class="p-4">
+                        <img src="./images/language.svg" alt="language">
+                        <p class="inner-activities-tag">Language</p>
                     </div>
+                </div>
 
-                    <div class="col">
-                        <div>
-                            <img src="./images/gaming.svg" alt="gaming">
-                            <p class="inner-activities-tag">Gaming</p>
-                        </div>
+                <div class="col">
+                    <div class="p-4">
+                        <img src="./images/gaming.svg" alt="gaming">
+                        <p class="inner-activities-tag">Gaming</p>
                     </div>
+                </div>
 
-                    <div class="col">
-                        <p class="inner-activities-tag">+</p>
+                <div class="col">
+                    <div class="p-4">
+                        <!-- <p class="inner-activities-tag">+</p> -->
+                        <!-- <img src="./images/plus.svg" alt="More"> -->
+                        <i class="fa fa-plus"></i>
                         <p class="inner-activities-tag">View Other</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="courses">
-            <div class="container">
+    <!-- DONE -->
+    <section class="courses">
+        <div class="container">
 
-                <div class="row inner-courses-heading">
-                    <h2 class="">Recommended <strong>Courses</strong></h2>
-                    <button type="button" class="btn btn-outline-dark col">Dark</button>
-                </div>
-                
-                <div class="d-flex inner-courses-cards">
-                    <div class="card" style="border-radius: 15px;">
+            <div class="row inner-courses-heading align-items-center">
+                <h2 class="col">
+                    <span class="light-heading">Recommended</span>
+                    <span class="bold-heading">Courses</span>
+                </h2>
+                <button type="button" class="btn btn-outline-dark col-2 ml-auto new-button">Browse Course</button>
+            </div>
+
+            <div class="d-flex inner-courses-cards">
+                <div class="card">
+                    <div class="card-image-section position-relative">
                         <img class="card-img-top" src="./images/mobile.png" alt="card mobile">
 
-                        <div class="card-body">
-
-                            <div class="row">
-                                <h6 class="card-subtitle text-muted col">Graphic Design</h6>
-                                <h6 class="card-subtitle text-muted col-auto ml-auto">8h 17min</h6>
+                        <div class="image-hover position-absolute" id="myimage">
+                            <div class="position-relative"></div>
+                            <div class="text-center mt-3">
+                                <p>Preview Course</p>
                             </div>
-                            
-
-                            <h5 class="card-title">How To Become Great Graphic Designer in 7 Days</h5>
-
-                            <div class="text-muted row">
-                                <span class="col-auto">
-                                    <i class="fas fa-star courses-ratings-icons"></i>
-                                    <i class="fas fa-star courses-ratings-icons"></i>
-                                    <i class="fas fa-star courses-ratings-icons"></i>
-                                    <i class="fas fa-star courses-ratings-icons"></i>
-                                    <i class="fas fa-star-half courses-ratings-icons"></i>
-                                    (15,250)
-                                </span>
-                                
-                                <span class="col-auto ml-auto">2,526,471 Views</span>
-                            </div>
-
                         </div>
                     </div>
 
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-4 card-subtitle mt-3">
+                            <span class="text-muted">Graphic Design</span>
+                            <span class="text-muted float-right">8h 17min</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h5 class="card-title">How To Become Great Graphic Designer in 7 Days</h5>
+                        </div>
+
+                        <div class="text-muted flex-column">
+                            <span class="">
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star-half courses-ratings-icons"></i>
+                                (15,250)
+                            </span>
+                            <span class="float-right">2,526,471 Views</span>
+                        </div>
+
+                    </div>
                 </div>
 
-            </div>
-        </section>
-
-        <section class="facilities">
-            <div class="container">
-                <div class="inner-facilities col-sm-5">
-                    <div class="inner-facilities-heading">
-                        <h4>Why You Should</h4>
-                        <h2>Choose Us</h2>
+                <div class="card">
+                    <div class="card-image-section position-relative">
+                        <img class="card-img-top" src="./images/brushes.png" alt="card mobile">
+                        <div class="image-hover position-absolute">
+                            <div class="position-relative"></div>
+                            <div class="text-center mt-3">
+                                <p>Preview Course</p>
+                            </div>
+                        </div>
                     </div>
 
-                    <p>There are many variations of passages of Lorem Ipsum available, some form, by injected humour.</p>
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-4 card-subtitle mt-3">
+                            <span class="text-muted">Graphic Design</span>
+                            <span class="text-muted float-right">8h 17min</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h5 class="card-title">How To Become Great Graphic Designer in 7 Days</h5>
+                        </div>
+
+                        <div class="text-muted flex-column">
+                            <span class="">
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star-half courses-ratings-icons"></i>
+                                (15,250)
+                            </span>
+                            <span class="float-right">2,526,471 Views</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-image-section position-relative">
+                        <img class="card-img-top" src="./images/laptop.png" alt="card mobile">
+                        <div class="image-hover position-absolute">
+                            <div class="position-relative"></div>
+                            <div class="text-center mt-3">
+                                <p>Preview Course</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-body d-flex flex-column">
+                        <div class="mb-4 card-subtitle mt-3">
+                            <span class="text-muted">Graphic Design</span>
+                            <span class="text-muted float-right">8h 17min</span>
+                        </div>
+
+                        <div class="mb-3">
+                            <h5 class="card-title">How To Become Great Graphic Designer in 7 Days</h5>
+                        </div>
+
+                        <div class="text-muted flex-column">
+                            <span class="">
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star courses-ratings-icons"></i>
+                                <i class="fas fa-star-half courses-ratings-icons"></i>
+                                (15,250)
+                            </span>
+                            <span class="float-right">2,526,471 Views</span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- DONE -->
+    <section class="facilities">
+        <div class="container">
+            <div class="row align-items-end">
+                <div class="col-md-6">
+                    <h4>Why You Should</h4>
+                    <h2>Choose Us</h2>
+
+                    <p>There are many variations of passages of Lorem Ipsum available, some form, by injected humour.
+                    </p>
 
                     <ul class="list-unstyled">
                         <li class="facilities-checks">
@@ -201,157 +296,314 @@
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- DONE -->
-        <section class="achievements">
-            <div class="container text-center">
-                <div>   
-                    <h1>Our Achievements</h1>
+    <!-- DONE -->
+    <section class="achievements">
+        <div class="container text-center">
+            <h1>Our Achievements</h1>
 
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered<br>alteration in some form, by injected humour</p>
+            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                suffered<br>alteration in some form, by injected humour</p>
 
-                    <div class="row">
-                        <div class="col blue">
-                            <h2>2400+</h2>
-                            <p>Online Course</p>
-                        </div>
+            <div class="row">
+                <div class="col">
+                    <h2 class="blue">2400+</h2>
+                    <p>Online Course</p>
+                </div>
 
-                        <div class="col green">
-                            <h2>99,854+</h2>
-                            <p>Enroll Student</p>
-                        </div>
+                <div class="col">
+                    <h2 class="green">99,854+</h2>
+                    <p>Enroll Student</p>
+                </div>
 
-                        <div class="col yellow">
-                            <h2>650+</h2>
-                            <p>Expert Instructor</p>
-                        </div>
+                <div class="col">
+                    <h2 class="yellow">650+</h2>
+                    <p>Expert Instructor</p>
+                </div>
 
-                        <div class="col red">
-                            <h2>1820+</h2>
-                            <p>Profile Review</p>
+                <div class="col">
+                    <h2 class="red">1820+</h2>
+                    <p>Profile Review</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONE -->
+    <section class="monitor">
+        <div class="container">
+            <div class="bs-example">
+                <!-- Button HTML (to Trigger Modal) -->
+                <a href="#myModal" data-toggle="modal">
+                    <img src="./images/monitor.png" alt="monitor video" width="100%">
+                </a>
+
+                <!-- Modal HTML -->
+                <div id="myModal" class="modal">
+                    <div class="modal-content h-100">
+                        <div class="modal-body">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                            <video class="w-100 h-100" id="demoVideo" controls autoplay>
+                                <source src="./images/video.mp4" type="video/mp4">
+                            </video>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="monitor">
+    <!-- DONE -->
+    <section class="feedback">
+        <div class="inner-feedback">
             <div class="container">
-                <img src="./images/monitor.png" alt="monitor video" width="100%">
+                <!-- DONE -->
+                <div class="inner-feedback-heading row align-items-center mr-0 ml-0">
+                    <h2 class="col-auto mr-auto">
+                        <span class="light-heading">Enroll Student's</span>
+                        <span class="bold-heading">Feedback</span>
+                    </h2>
+
+                    <button type="button" class="btn btn-outline-dark col-2 ml-auto new-button">View More</button>
+                </div>
+
+                <!-- DONE -->
+                <div class="inner-feedback-content row">
+                    <div class="card col-auto mr-auto text-center">
+                        <div class="card-body">
+                            <p class="info">It has survived not only five centuries, but also the leap into <br>
+                                electronic typesetting, remaining essentially unchanged. It was <br> popularised in the
+                                1960s with the race.</p>
+                            <img src="./images/amanda_jackson.png" alt="Card image cap" width="60" height="60">
+                            <h5 class="card-title">Amanda Jackson</h5>
+                            <h6 class="card-subtitle text-muted">CEO, NRD Group</h6>
+                        </div>
+                    </div>
+
+                    <div class="card col-auto ml-auto text-center">
+                        <div class="card-body">
+                            <p class="info">It has survived not only five centuries, but also the leap into <br>
+                                electronic typesetting, remaining essentially unchanged. It was <br> popularised in the
+                                1960s with the race.</p>
+                            <img src="./images/john_doe.png" alt="Card image cap" width="60" height="60">
+                            <h5 class="card-title">John Doe</h5>
+                            <h6 class="card-subtitle text-muted">CEO, Pixel Group</h6>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DONE -->
+                <div class="inner-feedback-bottom text-center">
+                    <h3 class="light-heading">To Get Latest News & Further Update</h3>
+                    <h2 class="bold-heading">Subscribe Our Newsletter</h2>
+
+                    <button type="button" class="btn col-2 new-button">Subscribe</button>
+                </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <section class="feedback">
-            <div class="inner-feedback">
-                <div class="container">
-                    <!-- DONE -->
-                    <div class="inner-feedback-heading row">
-                        <h2 class="col-auto mr-auto">
-                            <span class="light-heading">Enroll Student's</span>
-                            <span class="bold-heading">Feedback</span>
-                        </h2>
-                        
-                        <button type="button" class="btn btn-outline-dark col-2 ml-auto">View More</button>
-                    </div>
+    <!-- DONE -->
+    <section class="carousel-section">
+        <div class="container">
+            <div class="d-flex align-items-start">
+                <h2>
+                    <span class="light-heading">Top Rated</span>
+                    <span class="bold-heading">Instructor</span>
+                </h2>
+            </div>
 
-                    <!-- DONE -->
-                    <div class="inner-feedback-content row">
-                        <div class="card col-auto mr-auto text-center">
-                            <div class="card-body">
-                                <p class="info">It has survived not only five centuries, but also the leap into <br> electronic typesetting, remaining essentially unchanged. It was <br> popularised in the 1960s with the race.</p>
-                                <img src="./images/amanda_jackson.png" alt="Card image cap" width="60" height="60">
-                                <h5 class="card-title">Amanda Jackson</h5>
-                                <h6 class="card-subtitle text-muted">CEO, NRD Group</h6>
-                            </div>
+            <div class="slick-demo">
+                <div class="items">
+                    <img src="./images/RubyGarcia.png" alt="RubyGarcia">
+                    <div class="instructor-details d-flex align-items-end p-3">
+                        <div>
+                            <h6>Ruby Garcia</h6>
+                            <p>Animator</p>
                         </div>
 
-                        <div class="card col-auto ml-auto text-center">
-                            <div class="card-body">
-                                <p class="info">It has survived not only five centuries, but also the leap into <br> electronic typesetting, remaining essentially unchanged. It was <br> popularised in the 1960s with the race.</p>
-                                <img src="./images/john_doe.png" alt="Card image cap" width="60" height="60">
-                                <h5 class="card-title">John Doe</h5>
-                                <h6 class="card-subtitle text-muted">CEO, Pixel Group</h6>
-                            </div>
+                        <div class="ml-auto">
+                            <p>4.95</p>
                         </div>
                     </div>
+                </div>
 
-                    <!-- DONE -->
-                    <div class="inner-feedback-bottom text-center">
-                        <h3 class="light-heading">To Get Latest News & Further Update</h3>
-                        <h2 class="bold-heading">Subscribe Our Newsletter</h2>
+                <div class="items">
+                    <img src="./images/RobertoTramel.png" alt="RobertoTramel">
+                    <div class="instructor-details d-flex align-items-end p-3">
+                        <div>
+                            <h6>Roberto Tramel</h6>
+                            <p>Graphic Designer</p>
+                        </div>
 
-                        <button type="button" class="btn col-2">Subscribe</button>
+                        <div class="ml-auto">
+                            <p>4.90</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="./images/PaulineJohns.png" alt="RubyGarcia">
+                    <div class="instructor-details d-flex align-items-end p-3">
+                        <div>
+                            <h6>Pauline Johns</h6>
+                            <p>Fine-Arts</p>
+                        </div>
+
+                        <div class="ml-auto">
+                            <p>4.88</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="./images/MarnieSmith.png" alt="RubyGarcia">
+                    <div class="instructor-details d-flex align-items-end p-3">
+                        <div>
+                            <h6>Marnie Smith</h6>
+                            <p>Developer</p>
+                        </div>
+
+                        <div class="ml-auto">
+                            <p>4.86</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items">
+                    <img src="./images/JoshuaWilliam.png" alt="JoshuaWilliam">
+                    <div class="instructor-details d-flex align-items-end p-3">
+                        <div>
+                            <h6>Joshua William</h6>
+                            <p>Video Editing</p>
+                        </div>
+
+                        <div class="ml-auto">
+                            <p>4.95</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- DONE -->
-        <section class="maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15130.737568842396!2d73.87717859999998!3d18.543159049999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1573035599683!5m2!1sen!2sin" width="100%" height="520px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-        </section>
+    <!-- DONE -->
+    <section class="maps">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15130.737568842396!2d73.87717859999998!3d18.543159049999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1573035599683!5m2!1sen!2sin"
+            width="100%" height="520px" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </section>
 
-        <!-- DONE -->
-        <section class="services">
-            <div class="container flex">
-                <div class="row">
-                    <div class="col">
+    <!-- DONE -->
+    <section class="services">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div>
                         <img src="./images/Logo.svg" alt="logo">
                     </div>
+                </div>
 
-                    <div class="col">
+                <div class="col">
+                    <div>
                         <h3 class="first">Community</h3>
-                        <p>Create Account</p>
-                        <p>Go to Premium</p>
-                        <p>Prefer A Friend</p>
-                        <p>Get Coupon Code</p>
                     </div>
 
-                    <div class="col">
+                    <div>
+                        <ul class="list-unstyled services-fonts">
+                            <li><a href="">Create Account</a></li>
+                            <li><a href="">Go to Premium</a></li>
+                            <li><a href="">Prefer A Friend</a></li>
+                            <li><a href="">Get Coupon Code</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
                         <h3 class="first">Support</h3>
-                        <p>Terms Condition</p>
-                        <p>Privacy & Policy</p>
-                        <p>Copyright Issue</p>
-                        <p>Get Help</p>
                     </div>
 
-                    <div class="col">
+                    <div>
+                        <ul class="list-unstyled services-fonts">
+                            <li><a href="#">Terms Condition</a></li>
+                            <li><a href="#">Privacy & Policy</a></li>
+                            <li><a href="#">Copyright Issue</a></li>
+                            <li><a href="#">Get Help</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div>
                         <h3 class="first">Join Us</h3>
-                        <p>Become Teacher</p>
-                        <p>Become Student</p>
-                        <p>Become Both</p>
-                        <p>Partnership</p>
                     </div>
 
-                    <div class="col">
-                        <h3 class="first">Download App</h3>
-                        <button type="button" class="btn btn-dark btn-block mybutton btn-brand">
-                            <i class="fa fa-apple"></i>
-                            <span>Apple IOs</span>
-                        </button>
-
-                        <button type="button" class="btn btn-dark btn-block mybutton btn-brand">
-                            <i class="fa fa-android"></i>
-                            <span>Google Play</span>
-                        </button>
+                    <div>
+                        <ul class="list-unstyled services-fonts">
+                            <li><a href="#">Become Teacher</a></li>
+                            <li><a href="#">Become Student</a></li>
+                            <li><a href="#">Become Both</a></li>
+                            <li><a href="#">Partnership</a></li>
+                        </ul>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <footer>
-            <div class="container">
-                <div class="row">
-                    <span class="col-10">Copyright &copy 2010-2019 Pro.skill</span>
+                <div class="col">
+                    <h3 class="first">Download App</h3>
+                    <button type="button" class="btn btn-dark btn-block mybutton btn-brand text-left">
+                        <i class="fa fa-apple align-middle"></i>
+                        <span>Apple IOs</span>
+                    </button>
 
-                    <a href="#home" class="col-2" onclick="topFunction()" id="gotop">
-                        <span>Go to Top</span>
-                        <i class='fas fa-arrow-circle-up'></i>
-                    </a>
+                    <button type="button" class="btn btn-dark btn-block mybutton btn-brand text-left">
+                        <i class="fa fa-android align-middle"></i>
+                        <span>Google Play</span>
+                    </button>
                 </div>
             </div>
-        </footer>
+        </div>
+    </section>
 
-    </body>
+    <!-- DONE -->
+    <footer>
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <span class="col text-left">Copyright &copy 2010-2019 Pro.skill</span>
+
+                <a href="#home" class="col-auto text-right" onclick="topFunction()" id="gotop">
+                    <span>Go to Top</span>
+                    <i class='fas fa-arrow-circle-up'></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfeJQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="./js/index.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript">
+        $('.slick-demo').slick({
+            infinite: false,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            arrows: true
+        });
+    </script>
+</body>
+
 </html>

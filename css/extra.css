@@ -1,0 +1,64 @@
+/* ------------------------------------------ font-rubik ------------------------------------------ */
+.font-rubik{
+    font-family: 'Rubik', sans-serif;
+}
+
+/* ------------------------------------------ font-poppins ------------------------------------------ */
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ------------------------------------------ font-weights ------------------------------------------ */
+.font-weight-light{
+    font-weight: 300;
+}
+
+.font-weight-regular{
+    font-weight: 400;
+}
+
+.font-weight-medium{
+    font-weight: 500;
+}
+
+.font-weight-semibold{
+    font-weight: 600;
+}
+
+.font-weight-bold{
+    font-weight: 700;
+}
+
+/* ------------------------------------------ font-size-15 ------------------------------------------ */
+.font-size-15{
+    font-size: 15px;
+}
+
+/* ------------------------------------------ font-colors ------------------------------------------ */
+.text-red{
+    color: #E0474E;
+}
+
+.text-blue{
+    color: #2680EB;
+}
+
+.text-yellow{
+    color: #FFBE58;
+}
+
+.text-green{
+    color: #00B592;
+}
+
+.text-dark-blue{
+    color: #475677;
+}
+
+.text-grey{
+    color: #7D8597;
+}
+
+.text-white{
+    color: #FFFFFF;
+}
