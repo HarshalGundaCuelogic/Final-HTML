@@ -493,40 +493,22 @@ header nav ul li:nth-last-child(1) a{
     margin-bottom: 57px;
 }
 
+.instructor-details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 370px;
+    width: 270px;
+    background: linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%);
+    border-radius: 10px;
+}
+
 .instructor-details h6{
     font-family: 'Rubik', sans-serif;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
     color: #FFFFFF;
-}
-
-.carousel-section .carousel-control-prev-icon{
-    background: url(../images/carouselarrow.svg);
-    height: 16px;
-    width: 34px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    transform: matrix(-1, 0, 0, -1, 0, 0);
-    margin-right: 24px;
-}
-
-.carousel-control-next-icon{
-    background: url(../images/carouselarrow.svg);
-    height: 16px;
-    width: 34px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.instructor-details{
-    position: absolute;
-    top: 0;
-    height: 100%;
-    border-radius: 10px;
-    background: linear-gradient(179deg, #FFFFFF00 0%, #00002A 100%);
 }
 
 .instructor-details p{
@@ -540,6 +522,43 @@ header nav ul li:nth-last-child(1) a{
 .instructor-details div:nth-child(2) p{
     font-size: 18px;
     color: #FFBE58;
+}
+
+.slick-track{
+    display: flex;
+}
+
+.slick-demo{
+    position: relative;
+}
+
+.slick-demo .items{
+    position: relative;
+    width: 270px;
+    height: 370px;
+}
+
+.slick-prev{
+    right: 15%;
+    background: url('../images/carouselarrow.svg');
+    transform: matrix(-1, 0, 0, -1, 0, 0);
+}
+
+.slick-next{
+    right: 8%;
+    background: url('../images/carouselarrow.svg');
+}
+
+.slick-arrow{
+    position: absolute;
+    width: 34px;
+    height: 18px;
+    top: -26%;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    font-size: 0px !important;
+    border: none;
 }
 
 /* ------------------------------------------ services section ------------------------------------------ */
@@ -630,3 +649,32 @@ footer .container a i{
       background-image: none;
     }
   }
+
+
+
+
+
+
+  .carousel-control 			 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+@media (max-width: 767px) {
+	.carousel-inner .active.left { left: -100%; }
+	.carousel-inner .next        { left:  100%; }
+	.carousel-inner .prev		 { left: -100%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+	.carousel-inner .active.left { left: -50%; }
+	.carousel-inner .next        { left:  50%; }
+	.carousel-inner .prev		 { left: -50%; }
+	.active > div { display:none; }
+	.active > div:first-child { display:block; }
+	.active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+	.carousel-inner .active.left { left: -25%; }
+	.carousel-inner .next        { left:  25%; }
+	.carousel-inner .prev		 { left: -25%; }	
+}

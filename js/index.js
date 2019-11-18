@@ -40,42 +40,9 @@ $(document).ready(function(){
 });
 
 // Carousel code
-// $('.carousel.carousel-multi-item .carousel-item').each(function(){
-//   var next = $(this).next();
-//   if (!next.length) {
-//     next = $(this).siblings(':first');
-//   }
-//   next.children(':first-child').clone().appendTo($(this));
-
-//   for (var i=0;i<4;i++) {
-//     next=next.next();
-//     if (!next.length) {
-//       next=$(this).siblings(':first');
-//     }
-//     next.children(':first-child').clone().appendTo($(this));
-//   }
-// });
-
-// $('#carousel-example-multi').carousel({
-//   interval: 10000
-// })
-
-
-$('#theCarousel').carousel({
-  interval: 2000
-})
-
-$('.multi-item-carousel .item').each(function(){
-  var next = $(this).next();
-  if (!next.length) {
-    next = $(this).siblings(':first');
-  }
-  next.children(':first-child').clone().appendTo($(this));
-  
-  if (next.next().length>0) {
-    next.next().children(':first-child').clone().appendTo($(this));
-  }
-  else {
-  	$(this).siblings(':first').children(':first-child').clone().appendTo($(this));
-  }
+$('.slick-demo').slick({
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true
 });
