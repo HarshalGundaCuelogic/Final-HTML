@@ -137,6 +137,7 @@ header nav ul li:nth-last-child(1) a{
 .inner-courses-cards .card{
     border: 1px solid rgba(71, 86, 119, 0.2);
     border-radius: 15px;
+    cursor: pointer;
 }
 
 .inner-courses-cards .card:nth-child(2){
@@ -171,11 +172,9 @@ header nav ul li:nth-last-child(1) a{
     top: 0;
     transition: 0.5s;
     opacity: 0;
-
 }
 
 .inner-courses-cards .card:hover .image-hover{
-    cursor: pointer;
     opacity: 0.8;
 }
 
@@ -479,6 +478,7 @@ header nav ul li:nth-last-child(1) a{
 }
 
 .inner-feedback-bottom .new-button{
+    margin-top: 47px;
     color: #FFFFFF;
     background-color: #00B592; 
     border: 1px solid #00B592;
@@ -602,3 +602,31 @@ footer .container span{
 footer .container a i{
     color: #166BFF;
 }
+
+
+
+.multi-item-carousel{
+  .carousel-inner{
+    > .item{
+      transition: .6s ease-in-out all;
+    }
+    .active{
+      &.left{
+        left:-33%;
+      }
+      &.right{
+        left:33%;
+      }
+    }
+    .next{
+      left: 33%;
+    }
+    .prev{
+      left: -33%;
+    }
+  }
+  .carouse-control{
+    &.left, &.right{
+      background-image: none;
+    }
+  }
