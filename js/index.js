@@ -40,9 +40,9 @@ $(document).ready(function(){
 });
 
 // Carousel code
-$('.slick-demo').slick({
-  infinite: false,
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  arrows: true
-});
+// $('.slick-demo').slick({
+//   infinite: false,
+//   slidesToShow: 3,
+//   slidesToScroll: 1,
+//   arrows: true
+// });
