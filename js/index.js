@@ -25,10 +25,10 @@ function topFunction()
 // Modal code
 $(document).ready(function(){
   $('#myModal').on('shown.bs.modal', function() {
-      $('#demoVideo')[0].play();
+      $('#demoVideo').play();
   })
   $('#myModal').on('hidden.bs.modal', function() {
-      $('#demoVideo')[0].pause();
+      $('#demoVideo').pause();
   })
   $(window).keypress(function(e) {
       var video = document.getElementById("demoVideo");
@@ -40,9 +40,9 @@ $(document).ready(function(){
 });
 
 // Carousel code
-// $('.slick-demo').slick({
-//   infinite: false,
-//   slidesToShow: 3,
-//   slidesToScroll: 1,
-//   arrows: true
-// });
+$('.slick-demo').slick({
+  infinite: false,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  arrows: true
+});
