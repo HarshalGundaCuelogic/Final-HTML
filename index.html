@@ -8,9 +8,9 @@
     <title>Home</title>
     <link
         href="https://fonts.googleapis.com/css?family=Poppins:300|Poppins:400|Poppins:500|Poppins:600|Poppins:700|Rubik:500|Rubik:400&display=swap"
-        rel="stylesheet" /> 
+        rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />   
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="./css/style.css" />
 </head>
@@ -341,18 +341,35 @@
                 </a>
 
                 <!-- Modal HTML -->
-                <div id="myModal" class="modal">
-                    <div class="modal-content h-100">
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                    aria-hidden="true">&times;</button>
+                                <h4 class="modal-title">YouTube Video</h4>
+                            </div>
+                            <div class="modal-body">
+                                <video id="cartoonVideo" controls>
+                                    <source src="./images/video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div id="myModal" class="modal">
+                    <div class="modal-content">
                         <div class="modal-body">
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
-                            <video class="w-100 h-100" id="demoVideo" controls autoplay>
+                            <video width="560" height="315" id="demoVideo" controls autoplay>
                                 <source src="./images/video.mp4" type="video/mp4">
                             </video>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
     </section>

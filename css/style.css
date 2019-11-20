@@ -353,27 +353,26 @@ header nav ul li:nth-last-child(1) a{
 }
 
 .monitor .modal-content video{
-    margin: 0 auto;
-    display: block;
+    width: 100%;
 }
 
-.monitor .modal-body {
+/* .monitor .modal-body {
     position: relative;
     padding: 0px;
-}
+} */
 
-.monitor .show{
+/* .monitor .show{
     padding-right: 0px;
-}
+} */
 
 .monitor .close{
     position: absolute;
-    right: 2%;
-    top: 2%;
-    font-size: 2rem;
+    right: 4%;
+    top: 4%;
+    font-size: 33px;
     font-weight: lighter;
-    color: #FFFFFF;
-    opacity: 1;
+    color: red;
+    /* opacity: 1; */
 }
 
 .modal-body button{
@@ -431,7 +430,10 @@ header nav ul li:nth-last-child(1) a{
 }
 
 .inner-feedback-content .card{
-    background-color: #FFFFFF;
+    background-color: #F.modal-content video{
+        /* margin: 0 auto; */
+        /* display: block; */
+    }FFFFF;
     opacity: 70%;
 }
 
@@ -629,3 +631,15 @@ footer .container span{
 footer .container a i{
     color: #166BFF;
 }
+
+
+
+
+
+
+
+
+
+
+
+
