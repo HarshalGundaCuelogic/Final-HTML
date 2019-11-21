@@ -101,7 +101,7 @@ header nav ul li:nth-last-child(1) a{
 }
 
 .activities .container .row .col > div{
-    border: 1px solid #475677;
+    border: 1px solid rgba(71, 86, 119, 0.2);
     border-radius: 15px;
     height: 100%;
 }
