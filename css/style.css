@@ -183,17 +183,19 @@ header nav ul li:nth-last-child(1) a{
     width: 68px;
     border: 2px solid #FFFFFF;
     border-radius: 50%;
-    margin-top: 25%;
-    margin-left: 40%;
+}
+
+.image-hover div:nth-child(2) p{
+    margin: 0;
 }
 
 .image-hover div:nth-child(1)::before{
     position: absolute;
     content: "";
-	border-top: 13px solid transparent;
-	border-left: 26px solid #FFFFFF;
+    border-top: 13px solid transparent;
+    border-left: 23px solid #FFFFFF;
     border-bottom: 13px solid transparent;
-    left: 35%;
+    left: 36%;
     top: 30%;
 }
 
@@ -302,7 +304,7 @@ header nav ul li:nth-last-child(1) a{
     background-color: #EFF7FF;
 }
 
-.achievements .container h1{
+.achievements .container h2{
     font-family: 'Poppins', sans-serif; 
     font-weight: 700;
     font-size: 48px;
@@ -311,7 +313,7 @@ header nav ul li:nth-last-child(1) a{
     margin-bottom: 22px;
 }
 
-.achievements .container h1 + p {
+.achievements .container h2 + p {
     margin-bottom: 62px;
 }
 
@@ -323,7 +325,7 @@ header nav ul li:nth-last-child(1) a{
     color: #7D8597;
 }
 
-.achievements .container .row h2{
+.achievements .container .row h3{
     font-family: 'Poppins', sans-serif; 
     font-weight: 400;
     font-size: 40px;
@@ -543,7 +545,7 @@ header nav ul li:nth-last-child(1) a{
 .slick-prev{
     right: 7%;
     background: url('../images/carouselarrow.svg');
-    transform: matrix(-1, 0, 0, -1, 0, 0);
+    transform: rotate(180deg);
 }
 
 .slick-next{
